@@ -14,7 +14,6 @@ let package = Package(
 
   products: [
     .library(name: "IssueReporting", targets: ["_IssueReporting"]),
-    .library(name: "IssueReportingTestSupport", targets: ["_IssueReportingTestSupport"]),
     .library(name: "XCTestDynamicOverlay", targets: ["XCTestDynamicOverlay"]),
   ],
   dependencies: [

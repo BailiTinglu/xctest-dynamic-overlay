@@ -13,13 +13,6 @@ let package = Package(
   ],
   products: [
     .library(name: "IssueReporting", targets: ["IssueReporting"]),
-    .library(
-      name: "IssueReportingTestSupport",
-      type: ProcessInfo.processInfo.environment["OMIT_DYNAMIC_TEST_SUPPORT"] == nil
-        ? .dynamic
-        : nil,
-      targets: ["IssueReportingTestSupport"]
-    ),
     .library(name: "XCTestDynamicOverlay", targets: ["XCTestDynamicOverlay"]),
   ],
   targets: [
